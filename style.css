@@ -8,7 +8,7 @@
   body {
     font-family: 'Poppins', sans-serif;
     background-color: hsl(0, 100%, 74%);
-    background-image: url('bg-intro-desktop.png');
+    background-image: url('images/bg-intro-desktop.png');
     background-size: cover;
     color: white;
     min-height: 100vh;
@@ -64,9 +64,9 @@
     box-shadow: 0 8px 0 rgba(0, 0, 0, 0.2);
   }
   
-  .input-group {
-    margin-bottom: 20px;
+.input-group {
     position: relative;
+    margin-bottom: 20px;
   }
   
   .input-group input {
@@ -75,6 +75,8 @@
     border: 1px solid hsl(246, 25%, 77%);
     border-radius: 5px;
     font-size: 1rem;
+    caret-color: hsl(248, 32%, 49%);
+    padding-right: 40px;
   }
   
   .input-group input:focus {
@@ -88,6 +90,7 @@
     font-style: italic;
     text-align: right;
     display: none;
+    margin-top: 5px;
   }
   
   .input-group.error input {
@@ -96,6 +99,21 @@
   
   .input-group.error .error-message {
     display: block;
+  }
+  
+  .error-icon {
+    position: absolute;
+    top: 35%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    display: none;
+
+  }
+  
+  .input-group.error .error-icon {
+    display: block; 
   }
   
 .input-group input {
